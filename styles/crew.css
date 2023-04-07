@@ -1,20 +1,16 @@
-.container{
+.container {
     background: linear-gradient(rgba(11, 13, 23, 0.3), rgba(11, 13, 23, 0.3)), url(../assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.content{
+.content {
     display: flex;
     margin-top: 62px;
     justify-content: space-evenly;
 }
 
-.text-content{
-    width: 488px;
-}
-
-.pick{
+.pick {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 28px;
     text-transform: uppercase;
@@ -24,12 +20,12 @@
     margin-top: 14px;
 }
 
-.zero-one{
+.zero-one {
     opacity: 0.25;
-    margin-right: 24px;
+    margin-right: 12px;
 }
 
-.role{
+.role {
     font-family: 'Bellefair', sans-serif;
     font-size: 32px;
     font-weight: 400;
@@ -38,7 +34,7 @@
     margin-bottom: 15px;
 }
 
-.name{
+.name {
     font-family: 'Bellefair', sans-serif;
     font-size: 56px;
     font-weight: 400;
@@ -46,7 +42,7 @@
     margin-bottom: 27px;
 }
 
-.description{
+.description {
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -56,114 +52,183 @@
     width: 444px;
 }
 
-.dots{
+.dots {
     width: 132px;
     height: 15px;
     display: flex;
     gap: 24px;
 }
 
-.dot{
+.dot {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.dot-active{
+.dot-active {
     background-color: #FFFFFF;
 }
 
-.dot-normal{
+.dot-normal {
     background-color: #FFFFFF;
     opacity: 0.17;
 }
-.dot-normal:hover{
+
+.dot-normal:hover {
     opacity: 0.5;
 }
 
-
-.crew-img{
+.crew-img {
     width: 568px;
     height: 712px;
 }
 
+.img-row {
+    display: none;
+}
 
 @media (max-width: 980px) {
-    .crew-img, .text-content{
+    .crew-img,
+    .text-content {
         width: 50%;
     }
-    .description{
+
+    .description {
         width: 95%;
     }
 }
+
 @media (max-width: 768px) {
-    .container{
+    .container {
         background-image: url(../assets/crew/background-crew-tablet.jpg);
     }
-    .content{
+
+    .content {
         flex-direction: column;
         align-items: center;
         margin-top: 40px;
         gap: 40px;
     }
 
-    .text-content{
+    .text-content {
         width: 100%;
         text-align: center;
     }
 
-    .text-wrapper{
+    .text-wrapper {
         width: 458px;
         margin: 0 auto;
     }
 
-    .pick{
+    .pick {
         font-size: 20px;
         letter-spacing: 3.375px;
         margin: 0 0 60px 38px;
         text-align: start;
     }
 
-    .role{
+    .role {
         font-size: 24px;
         margin-bottom: 8px;
     }
 
-    .name{
+    .name {
         font-size: 40px;
         margin-bottom: 16px;
     }
 
-    .description{
+    .description {
         font-size: 16px;
         line-height: 28px;
         width: 100%;
         margin-bottom: 40px;
     }
 
-    .dots{
+    .dots {
         margin: 0 auto;
         width: 88px;
         height: 10px;
         gap: 16px;
     }
 
-    .dot{
+    .dot {
         width: 10px;
         height: 10px;
     }
-    
-    .crew-img{
+
+    .crew-img {
         width: 456px;
         height: 572;
     }
 }
 
 @media (max-width: 500px) {
-   .container{
-    background-image: url(../assets/crew/background-crew-mobile.jpg);
-   }
-   
+    .container {
+        background-image: url(../assets/crew/background-crew-mobile.jpg);
+    }
 
+    .content {
+        margin-top: 85px;
+        padding: 0 24px;
+        gap: 0;
+    }
+
+    .text-content {
+        order: 3;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pick {
+        position: absolute;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        text-align: center;
+        top: 88px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .role {
+        font-size: 16px;
+        order: 2;
+    }
+
+    .name {
+        font-size: 24px;
+        order: 3;
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 0;
+        order: 4;
+    }
+
+    .dots {
+        order: 1;
+        margin-bottom: 32px;
+    }
+
+    .crew-img {
+        width: auto;
+        height: 222px;
+        order: 1;
+    }
+
+    .img-row {
+        display: block;
+        order: 2;
+        width: 100%;
+        border: 1px solid #383B4B;
+        margin-bottom: 32px;
+    }
 }

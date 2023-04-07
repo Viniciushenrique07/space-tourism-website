@@ -134,6 +134,7 @@ strong {
         right: -260px;
         top: 0;
         transition: all .3s;
+        z-index: 2;
     }
 
     .nav-ul {
@@ -168,7 +169,7 @@ strong {
         display: flex;
         flex-direction: column;
         gap: 6px;
-        z-index: 1;
+        z-index: 3;
     }
 
     .line {
