@@ -1,0 +1,205 @@
+.container{
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    padding-bottom: 118px;
+}
+
+.pick{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4.725px;
+    margin: 76px 0 64px 166.5px;
+}
+
+.zero-one{
+    opacity: 0.25;
+    margin-right: 16px;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.planet-img{
+    width: 445px;
+    height: auto;
+}
+
+.side-content {
+    width: 445px;
+}
+
+.aside-ul{
+    gap: 35px;
+    margin-bottom: 37px;
+}
+.aside-li{
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+.aside-active{
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.aside-normal{
+    color: #D0D6F9;
+}
+
+.aside-normal:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.title{
+    font-family: 'Bellefair', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.description{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+    font-weight: 400;
+    margin-bottom: 54px;
+}
+
+.aside-row{
+    border: 1px solid #383B4B;
+    opacity: 0.5;
+    margin-bottom: 28px;
+    width: 100%;
+}
+
+.stats-container{
+    display: flex;
+    gap: 79px;
+}
+
+.avg-distance, .travel-time {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    margin-bottom: 12px;
+}
+
+.distance, .time {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media (max-width: 790px) {
+    .container {
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+        padding-bottom: 62px;
+    }
+
+    .pick{
+        font-size: 20px;
+        letter-spacing: 3.375px;
+        margin: 40px 0 60px 38.5px;
+    }
+
+    .main-content{
+        flex-direction: column;
+        gap: 53px;
+        padding: 0 98px;
+    }
+
+    .planet-img{
+        width: 300px;
+    }
+
+    .side-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .aside-ul{
+        margin-bottom: 32px;
+    }    
+    
+    .title{
+        font-size: 80px;
+        margin-bottom: 8px;
+    }
+    
+    .description{
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 49px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+        background-image: url(../assets/destination/background-destination-mobile.jpg);
+        padding-bottom: 58px;
+    }
+    
+    .pick{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        text-align: center;
+        margin: 34px 0 32px 0;
+    }
+
+    .zero-one{
+        margin-right: 12px;
+    }
+    .main-content{
+        gap: 26px;
+        padding: 0 24px;
+    }
+    .planet-img{
+        width: 170px;
+    }
+    
+    .aside-ul{
+        margin-bottom: 20px;
+        gap: 26px;
+    }    
+    .aside-li{
+        font-size: 14px;
+        letter-spacing: 2.3625px;
+    }
+    
+    .title{
+        font-size: 56px;
+        margin-bottom: 1px;
+    }
+    
+    .description{
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 32px;
+    }
+    .aside-row{
+        margin-bottom: 32px;
+    }
+
+    .stats-container{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .avg-distance, .travel-time{
+        font-size: 14px;
+    }
+
+}

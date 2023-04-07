@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/destination.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  
+  <title>Space tourism website</title>
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <a href="./index.html"><img src="./assets/shared/logo.svg" class="logo" alt="logo"></a>
+      <hr class="row">
+      <nav class="navbar">
+        <ul class="nav-ul">
+          <li class="nav-li normal"><a href="./index.html"><strong>00</strong> Home</a></li>
+          <li class="nav-li active"><a href="./destination.html"><strong>01</strong> Destination</a></li>
+          <li class="nav-li normal"><a href="./crew.html"><strong>02</strong> Crew</a></li>
+          <li class="nav-li normal"><a href="./technology.html"><strong>03</strong> Technology</a></li>
+        </ul>
+      </nav>
+      <div class="hamburguer" id="hamburguer">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+      </div>
+    </header>
+    <h2 class="pick"><span class="zero-one">01</span> Pick your destination</h2>
+    <section class="main-content">
+      <img src="./assets/destination/image-moon.png" class="planet-img" alt="moon">
+      <aside class="side-content">
+        <ul class="aside-ul">
+          <li class="aside-li aside-active">Moon</li>
+          <li class="aside-li aside-normal">Mars</li>
+          <li class="aside-li aside-normal">Europa</li>
+          <li class="aside-li aside-normal">Titan</li>
+        </ul>
+        <h1 class="title">Moon</h1>
+        <p class="description">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+          regain perspective and come back refreshed. While you’re there, take in some history
+          by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+        <hr class="aside-row">
+        <div class="stats-container">
+          <div class="distance-container">
+            <p class="avg-distance">Avg. distance</p>
+            <p class="distance">384,400 km</p>
+          </div>
+          <div class="travel-time-container">
+            <p class="travel-time">Est. travel time</p>
+            <p class="time">3 days</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/destination.js" type="module"></script>
+</body>
+</html>
