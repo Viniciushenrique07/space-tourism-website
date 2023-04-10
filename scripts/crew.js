@@ -1,4 +1,4 @@
-import {dataFetching} from "./dataFetching.js"
+import { dataFetching } from "./dataFetching.js"
 
 dataFetching().then((data) => {
     const { crew } = data
@@ -7,7 +7,7 @@ dataFetching().then((data) => {
     const list = document.getElementsByClassName("dot")
 
     for (let i = 0; i < list.length; i++) {
-        list[i].addEventListener("click", () =>{
+        list[i].addEventListener("click", () => {
             let current = document.getElementsByClassName("dot-active")
 
             let name = document.querySelector(".name")
@@ -26,6 +26,6 @@ dataFetching().then((data) => {
 
         })
 
-        
+
     }
 })

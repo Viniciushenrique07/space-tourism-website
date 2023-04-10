@@ -89,6 +89,7 @@
 }
 
 @media (max-width: 980px) {
+
     .crew-img,
     .text-content {
         width: 50%;
@@ -193,7 +194,6 @@
         left: 0;
         right: 0;
         margin: 0;
-        text-align: center;
     }
 
     .role {
