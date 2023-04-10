@@ -6,7 +6,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    margin-top: 80px;
+    margin-top: 251px;
 }
 
 .text-content {
@@ -65,6 +65,7 @@
     .content {
         flex-direction: column;
         align-items: center;
+        margin-top: 106px;
     }
 
     .text-content {
@@ -96,14 +97,15 @@
         background-image: url(../assets/home/background-home-mobile.jpg);
     }
 
+    .content {
+        margin-top: 58px;
+    }
+
     .text-content {
         margin-bottom: 81px;
         width: 327px;
     }
 
-    .content {
-        margin-top: 58px;
-    }
 
     .title {
         font-size: 16px;
