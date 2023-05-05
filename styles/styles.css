@@ -133,6 +133,7 @@ strong {
         width: 254px;
         right: -260px;
         top: 0;
+        align-items: flex-start;
         transition: all .3s;
         z-index: 2;
     }
@@ -141,8 +142,7 @@ strong {
         flex-direction: column;
         gap: 32px;
         height: 212px;
-        margin: 118px 0 377px 32px;
-        align-items: flex-start;
+        margin: 118px 0 0px 32px;
         width: 100%;
     }
 
